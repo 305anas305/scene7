@@ -25,8 +25,8 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'django-insecure-ay-*e(7!y9mv9fff4+=kvkcz^d^^7keyi9$8wncx4gvp=#yf1+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-ALLOWED_HOSTS = ['localhost','127.0.0.1','192.168.0.102']
+DEBUG = False
+ALLOWED_HOSTS = ['13.60.65.177']
 
 
 # Application definition
@@ -76,14 +76,16 @@ WSGI_APPLICATION = 'family.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'family',
-        'USER':'root',
-        'PASSWORD':'root'
-    }
-}
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.mysql',
+   #     'NAME': 'database-1',
+    #    'USER':'anas305akgec@gmail.com',
+     #   'PASSWORD':'nizamuddin@123',
+      #  'HOST':'database-1.cz8w2oci46gh.eu-north-1.rds.amazonaws.com',
+       # 'PORT':'3306'
+    #}
+#}
 
 
 # Password validation
