@@ -1,0 +1,10 @@
+{% extends "testapp/base.html" %}
+
+{% block title %}Signup{% endblock %}
+{% block content %}
+<form method="POST"  style="max-width: 600px; margin: 0 auto;">
+        {% csrf_token %}
+        {{ form_list.as_p }}
+        <input type="submit" value="Signup">
+    </form>
+{% endblock %}

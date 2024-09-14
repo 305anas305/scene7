@@ -1,0 +1,37 @@
+{% extends "testapp/base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block navbar_buttons_right %}
+
+            <div class="nav-buttons">
+                <a href="/signup" class="nav-button">Signup</a>
+                <a href="/accounts/login" class="nav-button">Login</a>
+                <a href='/loginhome' class="nav-button">Blogs</a>
+
+            </div>
+
+
+{% endblock %}
+{% block content %}
+<h1 style="font-size: 3em; color: black; text-align: center; margin: 20px 0;">Expression welcomes You</h1>
+<p style="text-align: center; font-size: 1.2em; color: #333; margin: 20px;">
+
+In a world where privacy often takes a backseat,
+    Expressions offers a refreshing space where you can express your thoughts,
+    share your views, and connect with others without the pressure of revealing your
+    identity. Whether you’re seeking advice, sharing a personal experience, or
+    simply voicing your opinions, our platform ensures that your anonymity is respected,
+    allowing you to speak freely and engage honestly.
+    <br>
+    <h2 style="font-size: 2em; color: black; text-align: center; margin: 20px 0;">Why Choose Expression?</h2>
+
+1.Privacy First: Your identity remains confidential. Share your thoughts without fear of
+judgment or repercussion.
+<br>
+2.Unfiltered Expression: Feel empowered to discuss sensitive topics and share genuine
+feedback in a safe and secure environment.
+<br>
+3.Connect Anonymously: Engage with a diverse community of users who value privacy as much as you do, fostering open and honest dialogue.
+At Expression, we believe that true conversation thrives in an environment where everyone feels secure and respected. Join us today and experience the freedom to express yourself without boundaries.
+</p>
+{% endblock %}

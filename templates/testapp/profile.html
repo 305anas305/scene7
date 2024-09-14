@@ -1,0 +1,32 @@
+{% extends "testapp/base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block navbar_buttons_right %}
+
+            <div class="nav-buttons">
+                <a href="/create" class="nav-button">Create</a>
+                <a href="/loginhome" class="nav-button">Blogs</a>
+                <a href="/home" class="nav-button">Home</a>
+                <a href='/logout' class="nav-button">Logout</a>
+            </div>
+
+
+{% endblock %}
+{% block content %}
+    {% if blogs %}
+        <h1 style="color: black; font-size: 2em; text-align: center; margin: 0;">
+            List of Blogs
+        </h1>
+        {% for blog in blogs %}
+            <div class="blog-box">
+                <h1 class="blog-title">{{ blog.title }}</h1>
+                <p class="blog-created-at"><strong>Created at:</strong> {{ blog.created_at }}</p>
+                <div class="blog-content">{{ blog.content }}</div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p style="color: red; font-size: 2em; text-align: center; margin-top: 20px;">
+            No blogs found!
+        </p>
+    {% endif %}
+{% endblock %}

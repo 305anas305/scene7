@@ -1,0 +1,18 @@
+{% extends "testapp/base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block navbar_buttons_right %}
+
+            <div class="nav-buttons">
+                <a href="/home" class="nav-button">Home</a>
+            </div>
+
+
+{% endblock %}
+{% block content %}
+<form method="POST"  style="max-width: 600px; margin: 0 auto;">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Login" style="background-color: black; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+        </form>
+{% endblock %}
