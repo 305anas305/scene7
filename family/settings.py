@@ -79,9 +79,11 @@ WSGI_APPLICATION = 'family.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'family',
-        'USER':'root',
-        'PASSWORD':'root'
+        'NAME': 'database-1'
+        'USER':'anas305',
+        'PASSWORD':'nizamuddin@123'
+        'HOST':'database-1.cz8w2oci46gh.eu-north-1.rds.amazonaws.com',
+        'PORT':'3306'
     }
 }
 
